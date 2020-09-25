@@ -32,9 +32,8 @@ const Facts = ({title, slides}) => {
 				}}
 				spaceBetween={40}
 				slidesPerView={3}
+				slidesPerGroup={3}
 				centeredSlides={true}
-				// loop={true}
-				loopFillGroupWithBlank={true}
 			>
 				{factsSlides}
 			</Swiper>
