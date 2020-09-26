@@ -2,15 +2,20 @@ import React, {useState} from 'react';
 
 const SectorItem = ({sector}) => {
 	const [isToolTipShowing, setToolTipShowing] = useState(false);
-	const toggleToolTip = () => {
-		setToolTipShowing(
-			!isToolTipShowing
-		)
+	const toggleToolTip = (newValue) => {
+		
+		setToolTipShowing(newValue);
 	}
+	// const toggleToolTip = () => {
+	// 	setToolTipShowing(
+	// 		!isToolTipShowing
+	// 	)
+	// }
 	
 	return (
 		<div className="sectors-list-item"
-				 onClick={toggleToolTip}
+				 onMouseEnter={() => setToolTipShowing(true)}
+				 onMouseLeave={() => setToolTipShowing(false)}
 				 style={{
 					 background: `url(${sector.imgUrl}) center no-repeat`,
 					 backgroundSize: 'cover'
