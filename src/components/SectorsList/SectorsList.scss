@@ -7,7 +7,6 @@
     line-height: 41px;
     color: #fff;
     text-align: center;
-    margin-bottom: 42px;
   }
 
   &-subtitle {
@@ -15,5 +14,38 @@
     font-size: 23px;
     line-height: 27px;
     color: #FFFFFF;
+    margin: 42px 0 30px;
+  }
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &-item {
+      position: relative;
+      width: calc((100% / 3) - 70px);
+      height: 240px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+
+      &-name {
+        width: 100%;
+        text-align: center;
+        font-size: 23px;
+        line-height: 30px;
+        color: #222222;
+        background: rgba(255, 255, 255, 0.83);
+      }
+
+      &-tooltip {
+        position: absolute;
+        pointer-events: none;
+        appearance: none;
+        //opacity: 0;
+        //z-index: -1;
+      }
+    }
   }
 }

@@ -1,17 +1,9 @@
 import React from 'react';
 import './SectorsList.scss'
+import SectorItem from "./SectorItem";
 
 const SectorsList = ({title, subtitle, items}) => {
-	const itemsList = items.map((sector, i) => <div className="sectors-list-item" style={{
-		background: `utl(${sector.imgUrl}) center no-repeat / cover`
-	}}>
-		<p className="sectors-item-name">
-			{sector.name}
-		</p>
-		<p className="sectors-item-tooltip">
-			{sector.description}
-		</p>
-	</div>)
+	const itemsList = items.map((sector, i) => <SectorItem sector={sector} key={i}/>)
 	
 	return (
 		<section className="sectors container">
