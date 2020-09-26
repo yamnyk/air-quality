@@ -50,6 +50,13 @@
         clip-path: polygon(100% 0, 100% 100%, 75px 100%, 0 50%, 75px 0);
         //opacity: 0;
         z-index: 1;
+
+        &-switched {
+          left: initial;
+          right: 100%;
+          clip-path: polygon(calc(100% - 75px) 0, 100% 50%, calc(100% - 75px) 100%, 0 100%, 0 0);
+          padding: 16px 75px 16px 16px;
+        }
       }
     }
   }
