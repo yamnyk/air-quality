@@ -5,9 +5,9 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
-import './Facts.scss'
+import './Facts.scss';
 
-SwiperCore.use([Navigation, Pagination])
+SwiperCore.use([Navigation, Pagination]);
 
 const Facts = ({title, slides}) => {
 	const factsSlides = slides.map((slideInfo) => <SwiperSlide key={slideInfo.id}>
