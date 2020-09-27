@@ -7,6 +7,7 @@ import gcLogo from './assets/GC_logo.svg';
 import ITNLogo from './assets/ITN_logo.svg';
 import shidLogo from './assets/shid_emozhl_logo.svg';
 import Footer from "./components/Footer/Footer";
+import AirQuality from "./components/AirQuality/AirQuality";
 
 function App() {
 	const partners = [
@@ -100,6 +101,7 @@ function App() {
 			<SectorsList title="Политика по уменьшению загрязнений"
 									 subtitle="Есть много примеров успешной политики по уменьшению загрязнения воздуха в таких секторах, как транспорт, городское планирование, энергетика и промышленность:"
 									 items={sectors}/>
+			<AirQuality/>
 			<Footer links={navLinks} partners={partners} author={author} designer={designer}/>
 		</>
 	);

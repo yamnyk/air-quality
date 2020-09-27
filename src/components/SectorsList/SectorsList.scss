@@ -50,6 +50,7 @@
         clip-path: polygon(100% 0, 100% 100%, 75px 100%, 0 50%, 75px 0);
         //opacity: 0;
         z-index: 1;
+        animation: fadeIn 0.4s ease-in-out;
 
         &-switched {
           left: initial;
@@ -59,5 +60,14 @@
         }
       }
     }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
