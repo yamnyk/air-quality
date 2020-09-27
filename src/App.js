@@ -98,10 +98,10 @@ function App() {
 								 logos={partners}
 								 links={navLinks}/>
 			<Facts title="Основные факты" slides={factsSlides}/>
+			<AirQuality/>
 			<SectorsList title="Политика по уменьшению загрязнений"
 									 subtitle="Есть много примеров успешной политики по уменьшению загрязнения воздуха в таких секторах, как транспорт, городское планирование, энергетика и промышленность:"
 									 items={sectors}/>
-			<AirQuality/>
 			<Footer links={navLinks} partners={partners} author={author} designer={designer}/>
 		</>
 	);
