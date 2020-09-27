@@ -7,7 +7,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoieWFtbnlrIiwiYSI6ImNrZmxhZjZscjAwb2gycm54aWo2b
 
 const AirQuality = () => {
 	const mapContainer = useRef(null);
-	const [locationInfo, setLocationInfo] = useState({
+	const [locationInfo] = useState({
 		lng: 31,
 		lat: 48.3,
 		zoom: 5
